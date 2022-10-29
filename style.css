@@ -1,0 +1,585 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    padding: 6px;
+    color: #333;
+    transition: 0.1s;
+    padding-right: 30px;
+}
+
+.instagram a:hover {color: tomato;}
+.facebook a:hover {color: tomato;}
+.vk a:hover {color: tomato;}
+.telegram a:hover {color: tomato;}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    font-family: "Jost", sans-serif;
+
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.container{
+    margin: 0 180px;
+}
+
+.header-line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: rgb(148, 148, 148) 2px solid
+
+}
+.name-logo{
+    color: #333;
+    font-family: "Jost", sans-serif;
+    font-size: 30px;
+}
+.nav{
+    display: flex;
+    justify-content:space-around;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.nav ul {
+    display: none;
+    position: absolute;
+    top: 60%;
+    background-color: white;
+    list-style: none;
+    padding-top: 20px;
+    
+}
+
+.nav li:hover > ul {
+    display:inherit;
+}
+
+
+.nav ul li {   
+    position: relative;
+}
+.nav-item{
+    color: #333;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-right: 25px;
+    transition: 0.1s;
+}
+
+.nav-item:hover{
+    color: tomato;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(231, 231, 231);
+    margin: 50px 0px;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.name-title{
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0 40px;
+}
+.name-subtitle{
+    color: #333;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.main-photo{
+    width: 30%;
+    height: auto;
+    
+}
+
+.info-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-img{
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+
+    
+}
+
+.info-text{
+    color: #333;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 20px;
+
+}
+.info-text p{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+.info-text span{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.timeline {
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    padding: 30px 0 30px 50px;
+  
+    list-style: none;
+  }
+  
+  .timeline::before {
+    position: absolute;
+    top: 30px;
+    left: -1px;
+  
+    width: 2px;
+    height: 90%;
+  
+    background: #333;
+  
+    content: "";
+  }
+  
+  .timeline-item {
+    position: relative;
+  
+    margin-bottom: 100px;
+  }
+  
+  .timeline-item:last-of-type {
+    margin: 0;
+  }
+  
+  .timeline > ::before {
+    position: absolute;
+    top: 15%;
+    left: -60px;
+  
+    width: 20px;
+    height: 20px;
+  
+    background: tomato;
+  
+    border-radius: 50%;
+  
+    content: "";
+  }
+
+
+a.anchor{
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+.projects{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.projects h1{
+    text-align: center;
+}
+
+.projects-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-text{
+    color: #333;
+    font-size: 25px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.project-name{
+    color: #333;
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.project-block{
+    border-radius: 2%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+
+}
+.project-header-img{
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    width: 450px;
+    height: auto;
+}
+
+.project-img{
+    width: 45%;
+    padding: 20px 0;
+}
+
+.project-img-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    transition: 1s;
+
+    }
+    
+    .overlay:target {
+    display: block;
+    }
+    
+.popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    z-index: 20;
+    margin: 0;
+    width: 70%;
+    height: 80%;
+    position: fixed;
+    padding: 20px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    border-radius: 1%;
+    transform: translate(-50%, -500%);
+    overflow-y: scroll;
+    transition: 1s;
+}
+
+.popup::-webkit-scrollbar-thumb {
+    background-color: rgb(141, 141, 141);
+    border: 4px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;  
+  }
+  
+.popup::-webkit-scrollbar {
+    width: 20px;
+  }
+    
+.overlay:target+.popup {
+    display: block;
+    transform: translate(-50%, 0);
+    top: 8%;
+
+    }
+    
+.close {
+    display: flex;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    color:white;
+    bottom: 95vh;
+    left: 95vw;
+    width: 40px;
+    height: 40px;
+    position: sticky;
+    padding: 0;
+    border-radius: 50%;
+    background-color: rgba(61, 61, 61, 0.8);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    opacity: 0.4;
+    
+}
+    
+    .close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    }
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #444;
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+}
+.social-media-footer{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.burger{
+    display: none;
+}
+.burger span, .burger:after, .burger:before{
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+}
+.burger span{
+    top: 21px;
+}
+.burger:after, .burger:before{
+    content: '';
+}
+.burger:after{
+    bottom: 3px;
+}
+.burger:before{
+    top: 13px;
+}
+
+.burger.open-menu span {
+    opacity:0; 
+    transition: 0.5s; 
+}
+.burger.open-menu:before {
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+}
+.burger.open-menu:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+}
+
+@media(max-width: 842px){
+    .burger {
+        position: relative;
+        width: 40px;
+        height: 35px;
+        display: block;
+    }
+
+    .name-logo{
+        opacity: 0;
+    }
+    .header-line{
+        justify-content: flex-start;
+        padding: 10px;
+    }
+    .nav{
+        display: inline;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        padding-left: 20px;
+        width: 100%;
+        background: rgb(245, 246, 246);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+        left: calc(-100% - 20px);
+        transition: all 0.4s ease;
+        margin: 0;
+        }
+    .nav.open-menu {
+        left: 0;
+        margin: 0;
+    }
+
+    .social-media{
+        display: none;
+        
+    }
+
+    .container{
+        margin: 0 50px;
+    }
+
+    .main-holder{
+        color: white;
+        display: block;
+        text-align: center;
+        background-image: url("img/main-mob-img.jpg");
+        background-size: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 25px 0;
+        height: 500px;
+        width: auto;
+
+    }
+    .name-title{
+        color: white;
+        padding: 0;
+        font-size: 50px;
+        line-height: 0.97
+    }
+    .name-subtitle{
+        color: white;
+        font-size: 25px;
+        line-height: 1.4 ;
+    }
+    .main-photo{
+        display: none;
+    }
+    .about-img{
+        width: 40%;
+        height: auto;
+    }
+    .info-text{
+        font-size: 20px;
+    }
+    .info-text p{
+        font-size: 40px;
+        margin: 20px 0;
+    }
+    .project-header-img{
+        width: 300px;
+    }
+    .project-text{
+        font-size: 20px;
+    }
+    .project-img-holder{
+        display: block;
+        text-align: center;
+    }
+    .project-img{
+        width: 90%;
+        padding: 5px 0;
+    }
+    .projects{
+        margin: 40px 0;
+    }
+    .project-block{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto 
+    }
+    .popup{
+        width: 98vw;
+        height: 100vh;
+        padding: 4px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .anchor::after{
+        content: '';
+        position: absolute;
+        
+    }
+    a.anchor{
+        top: -70px;
+    }
+}
+@media(max-width: 1307px){
+    .name-logo{
+        display: none;
+    }
+
+}
+@media(max-width: 1057px){
+    .social-media{
+        display: none;
+    }
+    .social-media-footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .social-footer a{
+        margin: 0 auto;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        padding: 15px;
+        color: white;
+        transition: 0.1s;
+
+    }
+    .main-holder{
+        color: white;
+        display: block;
+        text-align: center;
+        background-image: url("img/main-mob-img.jpg");
+        background-size: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 25px 0;
+        height: 400px;
+        width: auto;
+    }
+    .main-photo{
+        display: none;
+    }
+    .name-title{
+        color: white;
+        padding: 0;
+        font-size: 50px;
+    }
+    .name-subtitle{
+        color: white;
+        font-size: 25px;
+    }
+}
