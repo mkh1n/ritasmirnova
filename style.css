@@ -5,9 +5,10 @@
     height: 48px;
     padding: 6px;
     color: #333;
-    transition: 0.1s;
+    transition: 0.2s;
     padding-right: 30px;
 }
+
 
 .instagram a:hover {color: tomato;}
 .facebook a:hover {color: tomato;}
@@ -18,67 +19,80 @@ a{
 }
 body{
     margin: 0;
-    font-family: "Jost", sans-serif;
-
+    font-family: "Montserrat", sans-serif;
+    line-height: 2;
 }
 
 .header{
     position: sticky;
     top: 0;
     background-color: white;
+
 }
-.container{
-    margin: 0 180px;
+.header-container{
+    margin: 0 5%;
+}
+.container , .container-contacts{
+    margin: 0 240px;
 }
 .main-container{
     margin: 0 180px;
 }
 
 .header-line{
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: rgb(148, 148, 148) 2px solid
-
+    box-shadow: 0 16px 20px -20px rgb(83, 83, 83);
 }
+
 .name-logo{
     color: #333;
-    font-family: "Jost", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
+    font-weight: bold;
 }
 .nav{
     display: flex;
     justify-content:space-around;
-    padding: 20px 0;
+    padding: 5px 0;
     list-style: none;
-}
-
-.nav ul {
-    display: none;
-    position: absolute;
-    top: 60%;
-    background-color: white;
-    list-style: none;
-    padding-top: 20px;
+    position: relative;
     
 }
 
+.nav ul {
+    width: auto;
+    display: none;
+    position: absolute;
+    top: 80%;
+    background-color: white;
+    padding-bottom: 15px;
+    list-style: none;
+    left:420px;
+    border-radius: 2%;
+}
+
 .nav li:hover > ul {
-    display:inherit;
+    display:block;
 }
 
 
 .nav ul li {   
     position: relative;
 }
-.nav-item{
+.nav-item , .nav-item-mob{
     color: #333;
     text-decoration: none;
-    font-family: "Jost", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 25px;
     margin-right: 25px;
     transition: 0.1s;
+}
+.nav-item-mob{
+    display: none
 }
 
 .nav-item:hover{
@@ -99,6 +113,8 @@ body{
     margin: 50px 0px;
     align-items: center;
     margin-bottom: 100px;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    border-radius: 1%;
 
 }
 
@@ -106,8 +122,8 @@ body{
     display: flex;
     flex-direction: column;
     color: #333;
-    font-family: "Jost", sans-serif;
-    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
     font-size: 65px;
     justify-content: center;
     align-items: center;
@@ -115,16 +131,20 @@ body{
     width: 100%;
     text-align: center;
     padding: 0 40px;
+    line-height: 2;
 }
 .name-subtitle{
     color: #333;
     font-size: 30px;
     font-weight: 400;
+    line-height: 1;
 }
 
 .main-photo{
     width: 30%;
     height: auto;
+    border-bottom-right-radius: 1%;
+    border-top-right-radius: 1%;
     
 }
 
@@ -139,26 +159,27 @@ body{
     width: 20%;
     height: auto;
     border-radius: 50%;
-    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 
     
 }
 
 .info-text{
     color: #333;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     padding-left: 20px;
 
 }
 .info-text p{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
+    line-height: 1;
 }
 .info-text span{
     font-size: 30px;
     font-weight: bold;
+    line-height: 1;
 
 }
 
@@ -222,20 +243,26 @@ a.anchor{
 }
 .projects h1{
     text-align: center;
+    font-size: 40px;
+}
+.project-block a{
+    line-height: 1;
 }
 
 .projects-holder{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .project-text{
     color: #333;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     width: 100%;
     text-align: center;
+    line-height: 2;
+    padding-bottom: 20px;
 }
 
 .row{
@@ -246,31 +273,37 @@ a.anchor{
 
 .project-name{
     color: #333;
-    font-family: "Jost", sans-serif;
-    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
+    line-height: 2;
 }
 
 .project-block{
-    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    border-radius: 1%;
     text-align: center;
     margin-bottom: 20px;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 
 }
 .project-header-img{
-    border-top-left-radius: 2%;
-    border-top-right-radius: 2%;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
     width: 450px;
     height: auto;
 }
 
 .project-img{
     width: 45%;
-    padding: 20px 0;
+    padding-bottom: 20px    ;
+
 }
 
 .project-img-holder{
@@ -289,7 +322,6 @@ a.anchor{
     display: none;
     background-color: rgba(0, 0, 0, 0.65);
     position: fixed;
-    transition: 1s;
 
     }
     
@@ -312,7 +344,7 @@ a.anchor{
     border-radius: 1%;
     transform: translate(-50%, 0%);
     overflow-y: scroll;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .popup::-webkit-scrollbar-thumb {
@@ -323,7 +355,7 @@ a.anchor{
   }
   
 .popup::-webkit-scrollbar {
-    width: 20px;
+    width: 17px;
   }
     
 .overlay:target+.popup {
@@ -334,7 +366,7 @@ a.anchor{
     
 .close {
     display: flex;
-    font-family: "Jost", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     color:white;
     bottom: 95vh;
@@ -355,11 +387,84 @@ a.anchor{
     
 .close:hover {
     background-color: rgba(252, 20, 0, 0.8);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+}
+.contacts{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contacts-text{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.contacts-holder{    
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    border-radius: 1%;
+}
+.contact-left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.contacts h1{
+    font-size: 40px;
+}
+.contact-img{
+    width: 50%;
+    height: auto;
+    border-bottom-right-radius: 1%;
+    border-top-right-radius: 1%;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.contact a{
+    text-decoration: none;
+    color:#fefefe;
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.contact a:hover{
+    color: tomato
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+
+}
+.social-media-contacts{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-right: 0;
+}
+.social-media-contacts a{
+    color: white;
+    transition: 0.2s;  
+}
+.social-media-contacts .fa-2x{
+    font-size: 3em;
 }
 
 
@@ -370,7 +475,7 @@ a.anchor{
     height: 50px;
     background-color: #444;
     color: white;
-    font-family: "Jost", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
 }
 .social-media-footer{
@@ -417,6 +522,103 @@ a.anchor{
     transition: 0.4s;
 }
 
+@media(max-width: 1475px){
+    .name-logo{
+        display: none;
+    }
+    .projects-holder{
+        display: block;
+    }
+    .project-header-img{
+        width: 100%;
+    }
+    .project-block{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contacts-text{
+        font-size: 30px;
+    }
+    .contact a{
+        font-size: 30px;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .container-contacts{
+        margin: 0 0;
+    }
+
+}
+
+
+@media(max-width: 1131px){
+    .container{
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+    .social-media{
+        display: none;
+    }
+    .social-media-footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .social-footer a{
+        margin: 0 auto;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        padding: 15px;
+        color: white;
+        transition: 0.1s;
+
+    }
+    .main-holder{
+        color: white;
+        display: block;
+        text-align: center;
+        background-image: url("img/main-mob-img.jpg");
+        background-size: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 25px 0;
+        height: 400px;
+        width: auto;
+        border-radius: 0;
+    }
+    .main-photo{
+        display: none;
+    }
+    .name-title{
+        color: white;
+        padding: 0;
+        font-size: 40px;
+    }
+    .name-subtitle{
+        color: white;
+        font-size: 20px;
+    }
+    .nav-item , .nav-item-mob{
+        font-size: 20px;
+    }
+    .nav{
+        padding: 0 0;
+    }
+    .contact-img{
+        display: none;
+    }
+    .contact-left{
+        height: 600px;
+        background-image: url('img/contact-mob-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 @media(max-width: 842px){
     .burger {
         position: relative;
@@ -431,6 +633,8 @@ a.anchor{
     .header-line{
         justify-content: flex-start;
         padding: 10px;
+        border-bottom: rgb(148, 148, 148) 2px solid;
+        box-shadow: none;
     }
     .nav{
         display: inline;
@@ -449,6 +653,13 @@ a.anchor{
         left: 0;
         margin: 0;
     }
+    .nav-item-mob{
+        display: block;
+    }
+    .none{
+        display: none;
+    }
+    
 
     .social-media{
         display: none;
@@ -478,13 +689,14 @@ a.anchor{
     .name-title{
         color: white;
         padding: 0;
-        font-size: 50px;
-        line-height: 0.97
+        font-size: 45px;
+        line-height: 1;
     }
     .name-subtitle{
         color: white;
-        font-size: 25px;
-        line-height: 1.4 ;
+        font-size: 20px;
+        line-height: 1.2;
+        padding: 10px;
     }
     .main-photo{
         display: none;
@@ -506,12 +718,13 @@ a.anchor{
         margin-left: 10px;
         text-align: left;
     }
-    .project-header-img{
-        width: 300px;
-    }
     .project-text{
         font-size: 20px;
         padding-left: 5px;
+    }
+    .project-name{
+        font-size: 1em;
+        line-height: 1.5;
     }
     .project-img-holder{
         display: block;
@@ -524,18 +737,14 @@ a.anchor{
     .projects{
         margin: 40px 0;
     }
-    .project-block{
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto 
-    }
     .overlay:target+ .popup{
+        transform: translate(-50.1%, 0);
         top: -0.5%
     }
     .popup{
-        width: 98vw;
-        height: 90vh;
-        padding: 5px;
+        max-width: 100vw;
+        width: 90vw;
+        height: 87vh;
         overflow-x:hidden;
         border-bottom-left-radius: 3%;
         border-bottom-right-radius: 3%;
@@ -563,54 +772,22 @@ a.anchor{
         top: 94vh;
         transition: 1s
     }
-
-}
-@media(max-width: 1307px){
-    .name-logo{
-        display: none;
-    }
-
-}
-@media(max-width: 1057px){
-    .social-media{
-        display: none;
-    }
-    .social-media-footer{
-        display: flex;
-        justify-content: space-around;
-    }
-    .social-footer a{
-        margin: 0 auto;
-        text-align: center;
-        width: 30px;
-        height: 30px;
-        padding: 15px;
-        color: white;
-        transition: 0.1s;
-
-    }
-    .main-holder{
-        color: white;
-        display: block;
-        text-align: center;
-        background-image: url("img/main-mob-img.jpg");
-        background-size: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin: 25px 0;
-        height: 400px;
-        width: auto;
-    }
-    .main-photo{
-        display: none;
-    }
-    .name-title{
-        color: white;
-        padding: 0;
-        font-size: 50px;
-    }
-    .name-subtitle{
-        color: white;
+    .contacts-text{
         font-size: 25px;
     }
+    .contact {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .social-media-contacts{
+        font-size: 0.8em;
+        width: 50%;
+    }
+    
+
 }
+

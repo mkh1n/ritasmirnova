@@ -1,4 +1,4 @@
-$('.nav-item').on( 'click', function(){ 
+$('.nav-item, .nav-item-mob').on( 'click', function(){ 
     var el = $(this);
     var dest = el.attr('href'); // получаем направление
     if(dest !== undefined && dest !== '') { // проверяем существование

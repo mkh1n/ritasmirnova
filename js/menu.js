@@ -7,7 +7,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.nav-item').click(function(){
+    $('.nav-item, .nav-item-mob').click(function(){
         $('.nav').toggleClass('open-menu');
         $('.burger').toggleClass('open-menu');
     });
