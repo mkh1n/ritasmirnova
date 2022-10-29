@@ -30,6 +30,9 @@ body{
 .container{
     margin: 0 180px;
 }
+.main-container{
+    margin: 0 180px;
+}
 
 .header-line{
     display: flex;
@@ -282,7 +285,7 @@ a.anchor{
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 10;
+    z-index: 10;    
     display: none;
     background-color: rgba(0, 0, 0, 0.65);
     position: fixed;
@@ -291,7 +294,7 @@ a.anchor{
     }
     
     .overlay:target {
-    display: block;
+        display: block;
     }
     
 .popup {
@@ -307,7 +310,7 @@ a.anchor{
     border: 1px solid #383838;
     background: #fefefe;
     border-radius: 1%;
-    transform: translate(-50%, -500%);
+    transform: translate(-50%, 0%);
     overflow-y: scroll;
     transition: 1s;
 }
@@ -327,7 +330,6 @@ a.anchor{
     display: block;
     transform: translate(-50%, 0);
     top: 8%;
-
     }
     
 .close {
@@ -351,14 +353,14 @@ a.anchor{
     
 }
     
-    .close:hover {
+.close:hover {
     background-color: rgba(252, 20, 0, 0.8);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
-    }
+}
 
 
 .footer{
@@ -454,7 +456,10 @@ a.anchor{
     }
 
     .container{
-        margin: 0 50px;
+        margin: 0 10px;
+    }
+    .main-container{
+        margin: 0;
     }
 
     .main-holder{
@@ -490,16 +495,23 @@ a.anchor{
     }
     .info-text{
         font-size: 20px;
+        padding: 0;
+        text-align: center;
     }
     .info-text p{
         font-size: 40px;
         margin: 20px 0;
+    }
+    .timeline{
+        margin-left: 10px;
+        text-align: left;
     }
     .project-header-img{
         width: 300px;
     }
     .project-text{
         font-size: 20px;
+        padding-left: 5px;
     }
     .project-img-holder{
         display: block;
@@ -517,10 +529,16 @@ a.anchor{
         margin-left: auto;
         margin-right: auto 
     }
+    .overlay:target+ .popup{
+        top: -0.5%
+    }
     .popup{
         width: 98vw;
-        height: 100vh;
-        padding: 4px;
+        height: 90vh;
+        padding: 5px;
+        overflow-x:hidden;
+        border-bottom-left-radius: 3%;
+        border-bottom-right-radius: 3%;
     }
     .row{
         flex-direction: column;
@@ -533,6 +551,19 @@ a.anchor{
     a.anchor{
         top: -70px;
     }
+    .close{
+        display: none;
+    }
+    .overlay::after{
+        font-size: 18px;
+        color: white;
+        position: relative;
+        content: 'Назад';
+        z-index: 30;
+        top: 94vh;
+        transition: 1s
+    }
+
 }
 @media(max-width: 1307px){
     .name-logo{
