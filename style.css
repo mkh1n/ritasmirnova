@@ -41,7 +41,6 @@ body{
 }
 
 .header-line{
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,13 +50,13 @@ body{
 .name-logo{
     color: #333;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 .nav{
     display: flex;
     justify-content:space-around;
-    padding: 5px 0;
+    padding: 2px 0;
     list-style: none;
     position: relative;
     
@@ -67,12 +66,14 @@ body{
     width: auto;
     display: none;
     position: absolute;
-    top: 80%;
-    background-color: white;
+    background-image: url(img/header-img.png);
     padding-bottom: 15px;
     list-style: none;
-    left:420px;
+    right:-26px;
     border-radius: 2%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .nav li:hover > ul {
@@ -88,7 +89,7 @@ body{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 25px;
     transition: 0.1s;
 }
@@ -124,7 +125,7 @@ body{
     flex-direction: column;
     color: #333;
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 60px;
     justify-content: center;
     align-items: center;
@@ -406,20 +407,23 @@ a.anchor{
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     color:white;
-    bottom: 95vh;
-    left: 95vw;
-    width: 40px;
+    bottom: 84vh;
+    right: 14vw;
+    width: 100px;
     height: 40px;
-    position: sticky;
+    position: fixed;
     padding: 0;
-    border-radius: 50%;
+    border-radius: 9px;
     background-color: rgba(61, 61, 61, 0.8);
     text-decoration: none;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    opacity: 0.4;
+    opacity: 0.6;
 } 
+.close:after{
+    content: 'Назад';
+}
 .close:hover {
     background-color: rgba(252, 20, 0, 0.8);
 }
@@ -515,7 +519,7 @@ a.anchor{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    height: 30px;
     background-color: #444;
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -584,9 +588,6 @@ a.anchor{
         margin-right: auto;
     }
     .contacts-text{
-        font-size: 30px;
-    }
-    .contact a{
         font-size: 30px;
     }
     .icon{
@@ -679,7 +680,7 @@ a.anchor{
     .header-line{
         justify-content: flex-start;
         padding: 10px;
-        border-bottom: rgb(148, 148, 148) 2px solid;
+        border-bottom: rgb(148, 148, 148) 0.5px solid;
         box-shadow: none;
     }
     .nav{
@@ -790,13 +791,17 @@ a.anchor{
         margin: 40px 0;
     }
     .popup{
-        width: 90vw;
-        height: 87vh;
-        top: 40%;
-        left: 50%;
-        margin-top: -40vh; 
-        margin-left: -50vw;
-        overflow-x:hidden;
+        margin:0;
+        margin-top:0;
+        margin-left:0;
+        width: calc(100vw - 37px);
+        height: 90vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 20px;
+        overflow-x: hidden;
         border-radius: 0;
         border-bottom-left-radius: 30px 30px;
         border-bottom-right-radius: 30px 30px;
@@ -813,23 +818,27 @@ a.anchor{
         top: -70px;
     }
     .close{
-        display: none;
+        position: fixed;
+        top: 88vh;
+        left: 36vw;
+        width: 80px;
+        height: 35px;
+
     }
-    .overlay::after{
-        font-size: 18px;
-        color: white;
-        position: relative;
+    .close:after{
         content: 'Назад';
-        z-index: 30;
-        top: 94vh;
-        transition: 1s
     }
+
+
     .contacts-text{
         font-size: 25px;
     }
     .contact {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 20px;
+    }
+    .contact a{
+        font-size: 20px;
     }
     .icon{
         width: 40px;
