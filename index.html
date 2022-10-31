@@ -23,13 +23,18 @@
                         <li><a class="nav-item" href="#main">Главная</a></li>
                         <li><a class="nav-item" href="#about">Обо мне</a></li>
                         <li><a class="nav-item"href="#projects">Мои проекты</a></li>
-                        <li><a class="nav-item-mob"href="#">Галерея</a>
-                            <li><a class="nav-item-mob"href="#contacts">Контакты</a>
-                        <li><a class="nav-item none"href="">Разное</a>
-                            <ul>
-                                <li><a class="nav-item"href="#">Галерея</a></li>
-                                <li><a class="nav-item"href="#contacts">Контакты</a></li>
-                            </ul></li>  
+                        <li><a class="nav-item mob"href="#">Галерея</a>
+                        <li><a class="nav-item mob"href="#contacts">Контакты</a>
+                        <li>
+                            <div class="lang_buttons mob-leng">
+                                <a href="#" class="button rus">
+                                    ENG
+                                </a>
+                                <a href="#" class="button en">
+                                    RU
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                     <div class="social-media">
                         <div class="social vk">
@@ -42,6 +47,14 @@
                             <a href="https://www.instagram.com/tvorita_smirnova/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
                         </div>
                     </div>
+                    <div class="lang_buttons none">
+                        <a href="#" class="button rus">
+                            ENG
+                        </a>
+                        <a href="#" class="button en">
+                            RU
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,24 +63,35 @@
             <a class="anchor" id="main"></a>
             <div class="main-container">
                 <div class="main-holder">
-                    <div class="name-title">
-                        Маргарита Смирнова
-                        <div class="name-subtitle">
-                            Актриса театра и кино, ведущая мероприятий, больничный клоун, тренер актерского мастерства
-                        </div>
+                    <div class="bg-1"></div>
+                    <div class="bg-2"></div>
+                    <div class="main-text">
+                            Маргарита<br>
+                            Смирнова<br>
+                            <div class="main-subtitle">Актриса театра и кино,
+                            ведущая мероприятий, больничный клоун,
+                            тренер актерского мастерства</div>
                     </div>
-                    <img class="main-photo" src="img/main-img.jpg" alt="лол кек">
+                    <div class="main-img-holder">
+                        <img class="main-photo" src="img/main-img-1.jpg" alt="лол кек">
+                    </div>
+                    <div class="main-btn-holder">
+                        <a  class ="main-btn" href="#about">Смотреть портфолио</a>
+                    </div>
                 </div>
             </div>
 
         </div>
 
         <div class="about">
-            <a class="anchor" id="about"></a>
             <div class="container">
                 <div class="info-about">
-                    <img class="about-img" src="img/about-img.jpg">
+                    <div class="about-img-holder">
+                        <img class="about-img" src="img/about-img.jpg">
+                    </div>
+                    
                     <div class="info-text">
+                        <a class="anchor" id="about"></a>
                         <p>Обо мне</p>
                         Маргарита Смирнова, актриса театра и кино, педагог актерского мастерства, больничный клоун. Автор проекта "Clown-online".
                         Лауреат международного фестиваля "Монокль". 
@@ -83,7 +107,7 @@
 
                         Соавтор тренингов для взрослых в составе дуэта "Allegro-practic"<br>
                         С 2021 г - проект "Clown-online" для подопечных благотворительных фондов. Шуша-шоу с актрисой Маргаритой Смирновой.<br>
-
+                        
                         
                         Побывала на классах таких мастеров, как: Наташа Фиссон (худ. рук. театра "Комик - Трест", Павел Мансуров (пантомима), Екатерина Можаева (клоун Антошка. Германия), Дэвид Шайнер (США), Дэвид Ларибле (Италия), Майкл Кристенсен (Сша), Карло Мо (Испасния),  Педро Фабио (Португалия).
                         Михаил Казиник, Дмитрий Крымов.
@@ -293,8 +317,9 @@
         </div> 
         <div class="contacts">
             <div class="container-contacts">
-                <a class="anchor" id="contacts"></a>
+                
                 <h1>Контакты</h1>
+                <a class="anchor" id="contacts"></a>
                 <div class="contacts-holder">
                     <div class="contact-left">
                         <div class="contacts-text">
@@ -331,6 +356,7 @@
         <script src="js/jquery-3.1.0.js"></script>
         <script src="js/scroll.js"></script>
         <script src="js/menu.js"></script>
+        <script src="js/translate.js"></script>
 
     </body>
 
