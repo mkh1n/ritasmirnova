@@ -59,7 +59,7 @@ body{
 .header{
     position: sticky;
     top: 0;
-    background-image: url(img/header-img.png);
+    background-color: #fff;
     z-index: 10;
 
 }
@@ -675,6 +675,7 @@ a.anchor{
     position: absolute;
     background: #515758;
     margin: 0 auto;
+    border-radius: 2px;
 }
 .burger span{
     top: 21px;
@@ -816,9 +817,6 @@ a.anchor{
         display: block;
     }
 
-    .name-logo{
-        opacity: 0;
-    }
     .header-line{
         justify-content: flex-start;
         padding: 10px;
@@ -975,7 +973,7 @@ a.anchor{
         margin-top:0;
         margin-left:0;
         width: calc(100vw - 37px);
-        height: 90vh;
+        height: 84vh;
         top: 0;
         left: 0;
         bottom: 0;
@@ -999,8 +997,8 @@ a.anchor{
     }
     .close{
         position: fixed;
-        top: 88vh;
-        left: 36vw;
+        top: 80vh;
+        left: 40vw;
         width: 80px;
         height: 35px;
 
