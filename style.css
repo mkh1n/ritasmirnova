@@ -175,7 +175,7 @@ body{
     height: 95vh;
 
 }
-.bg-1, .bg-2{
+.bg-1, .bg-2, .bg-3, .bg-4{
     position:absolute;
     width:800px;
     height: 200px;
@@ -192,7 +192,18 @@ body{
     height: 200px;
     top: 17vh;
     right: -13vw;
-
+}
+.bg-3{
+    width:820px;
+    height: 178px;
+    top: 57vh;
+    right: 56vw;
+}
+.bg-4{
+    width:1000px;
+    height: 220px;
+    top: 11vh;
+    right: 76vw;
 }
 .main-text{
     position:relative;
@@ -242,7 +253,8 @@ body{
     align-items: center;
     top: 80%;
     left:80%;
-    transition: 0.3s;
+    transition: 0.2s;
+    box-shadow:  0px 20px 20px rgb(33 72 70);
 }
 .main-btn{
     font-size: 25px;
@@ -397,8 +409,8 @@ a.anchor{
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 20vw;
-    height: auto;
+    width: 400px;
+    height: 250px;
     border-radius: 5px 5px;
     text-align: center;
     margin-bottom: 20px;
@@ -410,10 +422,11 @@ a.anchor{
 }
 
 .project-header-img{
+    transition: 0.3s;
     width: 100%;
     height: 100%;
-    transition: 0.3s;
-}
+    border-radius: 2%;}
+
 .project-block::before{
     position: absolute;
     content: '';
@@ -527,8 +540,8 @@ a.anchor{
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     color:white;
-    bottom: 90vh;
-    right: 10vw;
+    bottom: 92vh;
+    right: 9vw;
     width: 100px;
     height: 40px;
     position: fixed;
@@ -621,6 +634,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow:  0px 10px 20px rgb(107, 107, 107);
+    transition: 0.2s;
     }
 
 .img-block{
@@ -643,7 +658,6 @@ h1{
     transform: scale(1.1);
 }
 
-
 .img-popup{
     display: none;
     opacity: 0;
@@ -660,17 +674,13 @@ h1{
     animation: fadeInFromNone 0.5s ease-in-out;
     box-shadow: 0 0 10px 1px rgb(0, 0, 0);
 }
-.img-popup::-webkit-scrollbar-thumb {
-    background-color: rgb(141, 141, 141);
-    border: 4px solid transparent;
-    border-radius: 10px;
-    background-clip: padding-box;  
-  }
-  
+
 .overlay:target+.img-popup {
     display: block;
     opacity: 1;
 }
+
+
 .contacts-scroll::before{
     display: block;
 	content: "";
@@ -846,9 +856,6 @@ h1{
     .container{
         margin: 0 160px;
     }
-    .project-header-img{
-        width: 100%;
-    }
     .project-block{
         margin-left: auto;
         margin-right: auto;
@@ -893,7 +900,10 @@ h1{
         padding: 15px;
         color: white;
         transition: 0.1s;
-
+    }
+    .project-block{
+        width: 200px;
+        height: 180px;
     }
 
     .name-title{
@@ -985,12 +995,12 @@ h1{
         padding-bottom: 100px;
     }
     .main-holder{
+        position: relative;
+        bottom: 10vh;
         flex-direction: column;
         padding-left: 0;
         justify-content: space-around;
         align-items: center;
-
-
     }
     .main-img-holder{
         position: unset;
@@ -1033,7 +1043,9 @@ h1{
         width: 412px;
         top: 14vh;
         right: 13vw;
-
+    }
+    .bg-3{
+        top: 93vh;
     }
 
     .container{
@@ -1055,10 +1067,6 @@ h1{
     .kino{
         font-size: 15px;
         text-align: center;
-    }
-    .img-full{
-        max-height: 90vh;
-        max-width: 90vw;
     }
     .about-scroll::before{
         height: 150px;
