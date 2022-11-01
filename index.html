@@ -6,7 +6,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-        <title>Маргарита</title>
+        <title>Маргарита Смирнова</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="fav/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="fav/android-chrome-512x512.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-32x32.png">
+
+
+        <link rel="manifest" href="/site.webmanifest">
         <link href="style.css" rel="stylesheet">
     </head>
    <body>
@@ -17,13 +25,13 @@
                         <span></span>
                     </div>                   
                     <div class="name-logo">
-                        Маргарита Смирнова
+                        <a class = 'name' href="#main">Маргарита Смирнова</a></li>
                     </div>
                     <ul class="nav">
-                        <li><a class="nav-item" href="#main">Главная</a></li>
                         <li><a class="nav-item" href="#about">Обо мне</a></li>
                         <li><a class="nav-item"href="#projects">Мои проекты</a></li>
-                        <li><a class="nav-item mob"href="#">Галерея</a>
+                        <li><a class="nav-item"href="#kino">Кино</a></li>
+                        <li><a class="nav-item mob"href="#galery">Галерея</a>
                         <li><a class="nav-item mob"href="#contacts">Контакты</a>
                         <li>
                             <div class="lang_buttons mob-leng">
@@ -58,13 +66,14 @@
                 </div>
             </div>
         </div>
-        <a class="anchor" id="main"></a>
+        <a class="anchor" id="main"></a>    
         <div class="main">
             
             <div class="main-container">
                 <div class="main-holder">
                     <div class="bg-1"></div>
                     <div class="bg-2"></div>
+                    <div class="bg-3"></div>
                     <div class="main-text">
                             Маргарита<br>
                             Смирнова<br>
@@ -87,12 +96,11 @@
             <div class="container">
                 <div class="info-about">
                     <div class="about-img-holder">
-                        
                         <img class="about-img" src="img/about-img.jpg">
                     </div>
                     <div class="info-text">
                         <a class="anchor about-scroll" id="about"></a>
-                        <p>Обо мне</p>
+                        <h1>Обо мне</h1>
                         Маргарита Смирнова, актриса театра и кино, педагог актерского мастерства, больничный клоун. Автор проекта "Clown-online".
                         Лауреат международного фестиваля "Монокль". 
                         Победитель в номинациях театральных фестивалей: 
@@ -111,28 +119,7 @@
                         
                         Побывала на классах таких мастеров, как: Наташа Фиссон (худ. рук. театра "Комик - Трест", Павел Мансуров (пантомима), Екатерина Можаева (клоун Антошка. Германия), Дэвид Шайнер (США), Дэвид Ларибле (Италия), Майкл Кристенсен (Сша), Карло Мо (Испасния),  Педро Фабио (Португалия).
                         Михаил Казиник, Дмитрий Крымов.
-                        <br>
-                        <p>Кино</p>
-                        <span>Информация</span><br>
-                        <br>
-                        Год рождения: 1979<br>
-                        Рост: 157 см<br>
-                        Телосложение: среднее<br>
-                        Цвет волос: шатен<br>
-                        Цвет глаз: карие<br>
-                        Жанр: клоунада, эксцентрика, пантомима<br>
-                        Мобильный телефон: +7-962-685-54-28<br>
-                        Email: ritasmi@list.ru
-                        <br>
-                        <br>
-                        <span>Навыки</span><br>
-                        <br>
-                        Вождение автомобилем, клоунада,
-                        жанглирование, эстрадный вокал, езда на лощади,
-                        пантомима, дубляж, озвучивание, пародия, стенд-ап,
-                        йога, бальные танцы, игра на гитаре
-                        <br>
-                        <br>
+                        <br><br><br>
                         <span>Образование</span><br>
                         <ul class="timeline">
                             <li class="timeline-item"><h4>РГСИ</h4>
@@ -257,10 +244,10 @@
                     </div>
 
                     <div class="project-block">
-                        <a href="#kino"><img class = "project-header-img" src="img/camp/camp.jpg"><br>
+                        <a href="#project-kino"><img class = "project-header-img" src="img/camp/camp.jpg"><br>
                             <div class="project-name">Кино</div></a>
 
-                        <a href="#x" class="overlay" id="kino"></a>
+                        <a href="#x" class="overlay" id="project-kino"></a>
                         <div class="popup">
                             <div class="project-text">
                                 <h3>Кино</h3>
@@ -314,7 +301,110 @@
                     
                 </div>
             </div> 
+        </div>
+        <div class="kino">
+            <div class="container">
+                <a class="anchor" id="kino"></a>
+                <h1>Кино</h1>
+                <span>Информация</span><br>
+                <br>
+                Год рождения: 1979<br>
+                Рост: 157 см<br>
+                Телосложение: среднее<br>
+                Цвет волос: шатен<br>
+                Цвет глаз: карие<br>
+                Жанр: клоунада, эксцентрика, пантомима<br>
+                Мобильный телефон: +7-962-685-54-28<br>
+                Email: ritasmi@list.ru
+                <br>
+                <br>
+                <span>Навыки</span><br>
+                <br>
+                Вождение автомобилем, клоунада,
+                жанглирование, эстрадный вокал, езда на лощади,
+                пантомима, дубляж, озвучивание, пародия, стенд-ап,
+                йога, бальные танцы, игра на гитаре.<br><br>
+            </div>            
         </div> 
+
+        <div class="gallery">
+            <div class="container">
+                <a class="anchor" id="galery"></a>
+                <h1>Галерея</h1>
+                <div class="gallery-holder">
+                    <input type="checkbox" class="read-more-checker" id="read-more-checker" />
+                    <div class="limiter">
+
+                        <div class="img-block">
+                            <a href="#1"><img class = "gall-header" src="img/gal/gal-1.jpeg">
+                            <a href="#x" class="overlay" id="1"></a>
+                            <img class = "img-popup" src="img/gal/gal-1.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#2"><img class = "gall-header" src="img/gal/gal-2.jpeg">
+                            <a href="#x" class="overlay" id="2"></a>
+                            <img class = "img-popup" src="img/gal/gal-2.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#3"><img class = "gall-header" src="img/gal/gal-3.jpeg">
+                            <a href="#x" class="overlay" id="3"></a>
+                            <img class = "img-popup" src="img/gal/gal-3.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#4"><img class = "gall-header" src="img/gal/gal-4.jpeg">
+                            <a href="#x" class="overlay" id="4"></a>
+                            <img class = "img-popup" src="img/gal/gal-4.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#1"><img class = "gall-header" src="img/gal/gal-1.jpeg">
+                            <a href="#x" class="overlay" id="1"></a>
+                            <img class = "img-popup" src="img/gal/gal-1.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#2"><img class = "gall-header" src="img/gal/gal-2.jpeg">
+                            <a href="#x" class="overlay" id="2"></a>
+                            <img class = "img-popup" src="img/gal/gal-2.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#3"><img class = "gall-header" src="img/gal/gal-3.jpeg">
+                            <a href="#x" class="overlay" id="3"></a>
+                            <img class = "img-popup" src="img/gal/gal-3.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#4"><img class = "gall-header" src="img/gal/gal-4.jpeg">
+                            <a href="#x" class="overlay" id="4"></a>
+                            <img class = "img-popup" src="img/gal/gal-4.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#1"><img class = "gall-header" src="img/gal/gal-1.jpeg">
+                            <a href="#x" class="overlay" id="1"></a>
+                            <img class = "img-popup" src="img/gal/gal-1.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#2"><img class = "gall-header" src="img/gal/gal-2.jpeg">
+                            <a href="#x" class="overlay" id="2"></a>
+                            <img class = "img-popup" src="img/gal/gal-2.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#3"><img class = "gall-header" src="img/gal/gal-3.jpeg">
+                            <a href="#x" class="overlay" id="3"></a>
+                            <img class = "img-popup" src="img/gal/gal-3.jpeg">
+                        </div>
+                        <div class="img-block">
+                            <a href="#4"><img class = "gall-header" src="img/gal/gal-4.jpeg">
+                            <a href="#x" class="overlay" id="4"></a>
+                            <img class = "img-popup" src="img/gal/gal-4.jpeg">
+                        </div>
+                        
+                    <div class="bottom"></div>
+                    </div>
+                    <label for="read-more-checker" class="read-more-button"></label>
+
+                </div>
+
+            </div>
+        </div>
+
         <div class="contacts">
             <div class="container-contacts">
                 

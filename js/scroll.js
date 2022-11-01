@@ -1,4 +1,4 @@
-$('.nav-item, .nav-item-mob, .main-btn').on( 'click', function(){ 
+$('.nav-item, .nav-item-mob, .main-btn, .name').on( 'click', function(){ 
     var el = $(this);
     var dest = el.attr('href'); // получаем направление
     if(dest !== undefined && dest !== '') { // проверяем существование
