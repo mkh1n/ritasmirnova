@@ -72,7 +72,6 @@ body{
 .main-container{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 75px;
     position: relative;
     overflow:hidden;
     background: linear-gradient(var(--fourth),var(--fifth));  
@@ -260,9 +259,9 @@ body{
 
 }
 .about-img-holder{
-    position: absolute;
+    position: relative;
+    bottom: 120px;
     display: flex;
-    bottom: -367px;
     justify-content: center;
     align-items: center;
 
@@ -274,7 +273,8 @@ body{
 }
 
 .info-text{
-    margin-top:100px;
+    position: relative;
+    bottom: 120px;
     color: #333;
     font-size: 18px;
     font-weight: 400;
@@ -917,10 +917,10 @@ a.anchor{
 
     }
     .about-img-holder{
-        order: 1;
-        bottom:-200px
+        bottom:80px
     }
     .info-text{
+        bottom: 100px;
         font-size: 15px;
         padding: 0;
         text-align: center;
