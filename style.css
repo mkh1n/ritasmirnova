@@ -271,6 +271,12 @@ body{
     border-radius: 50%;
     border: solid white 15px;
 }
+.about-scroll::before{
+    display: block;
+	content: "";
+	height: 350px;
+	margin: -350px 0 0;
+}
 
 .info-text{
     position: relative;
@@ -338,8 +344,8 @@ a.anchor{
     top: -150px;
     visibility: hidden;
 }
+
 .projects{
-    margin-top: 100px;
     margin-bottom: 100px;
 }
 .projects h1{
@@ -549,6 +555,12 @@ a.anchor{
 }
 .close:hover {
     background-color: rgba(252, 20, 0, 0.8);
+}
+.contacts-scroll::before{
+    display: block;
+	content: "";
+	height: 120px;
+	margin: -120px 0 0;
 }
 .contacts{
     text-align: center;
@@ -925,6 +937,10 @@ a.anchor{
         padding: 0;
         text-align: center;
     }
+    .about-scroll::before{
+        height: 150px;
+        margin: -150px 0 0;
+    }
     .info-text p{
         font-size: 40px;
         margin: 20px 0;
@@ -953,8 +969,6 @@ a.anchor{
         width: 90%;
         margin: 5px 0;
     }
-    .projects{
-        margin: 40px 0;
     }
     .popup{
         margin:0;
@@ -995,7 +1009,10 @@ a.anchor{
         content: 'Назад';
     }
 
-
+    .contacts-scroll::before{
+        height: 100px;
+        margin: -100px 0 0;
+    }
     .contacts-text{
         font-size: 25px;
     }
