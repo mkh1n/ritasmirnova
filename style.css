@@ -425,7 +425,7 @@ a.anchor{
     transition: 0.3s;
     width: 100%;
     height: 100%;
-    border-radius: 2%;}
+}
 
 .project-block::before{
     position: absolute;
@@ -445,7 +445,6 @@ a.anchor{
 .project-img{
     width: 30vw;
     height: auto;
-    border-radius: 2%;
     margin-bottom: 20px;
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
@@ -619,11 +618,10 @@ h1{
 .read-more-button {
     cursor: pointer;
     display: inline-block;
-    color: #777;
+    color: #fff;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    color:#333;
     margin-top: 50px;
     margin-bottom: 100px;
     background: linear-gradient(45deg, var(--first) 10%,var(--second) 80%);  
@@ -747,16 +745,18 @@ h1{
     filter: invert();
 }
 
+
+.kinolift{
+    border-radius: 20%;
+    width: 45px;
+    height: 45px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .icon{
     width: 50px;
     height: 50px;
 
-}
-.kinolift{
-    border-radius: 20%;
-    width: 40px;
-    height: 40px;
-    margin-top: 5px;
 }
 
 .social-media-contacts{
@@ -861,7 +861,14 @@ h1{
         margin-right: auto;
     }
     .contacts-text{
-        font-size: 30px;
+        font-size: 45px;
+    }
+    .kinolift{
+        width: 20px;
+        height: 20px;
+    }
+    .social-media-contacts .fa-2x {
+        font-size: 40px;
     }
     .icon{
         width: 40px;
@@ -902,8 +909,8 @@ h1{
         transition: 0.1s;
     }
     .project-block{
-        width: 200px;
-        height: 180px;
+        width: 60VW;
+        height: 35vh;
     }
 
     .name-title{
@@ -918,8 +925,9 @@ h1{
     .nav-item , .nav-item-mob{
         font-size: 20px;
     }
-    .project-block{
-        width: 30vw;
+    .img-block{
+        width: 130px;
+        height: 100px;
     }
     .nav{
         padding: 0 0;
@@ -1083,9 +1091,14 @@ h1{
     .projects{
         margin-bottom: 0;
     }
+    .project-header-img{
+        min-height: 100%;
+        text-align: center;
+        object-fit: cover;
+    }
     .project-block{
-        width: 45vw;
-        border-radius: 4px;
+        width:90vw;
+        height: 40vw
     }
     .project-text{
         text-align: left;
@@ -1097,6 +1110,7 @@ h1{
         line-height: 1.2;
     }
     .project-img-holder{
+        min-height: 100%;
         display: block;
         text-align: center;
     }
@@ -1175,14 +1189,13 @@ h1{
         width: 40px;
         height: 40px;
     }
-    .social-media-contacts{
-        font-size: 0.8em;
-        width: 50%;
-    }
     .kinolift{
-        width: 35px;
-        height: 35px;
+        width: 34px;
+        height: 34px;
         margin-top: 0;
+    }
+    .social-media-contacts .fa-2x {
+        font-size: 35px;
     }
     
 
