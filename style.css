@@ -12,8 +12,8 @@
     --first: #e76f51;
     --second: #f4a261;
     --third: #e9c46a;
-    --fourth: #2a9d8f;
-    --fifth: #264653;
+    --fourth: #2cad9e;
+    --fifth: #254a58;
 
 }
 
@@ -55,20 +55,27 @@ body{
     line-height: 2;
     color: #333;
     font-size: 18px;
+    background-color: rgb(243, 243, 243);
 }
 
 .header{
     position: sticky;
     top: 0;
     background-color: #fff;
-    z-index: 10;
+    z-index:50;
 
 }
 .header-container{
     margin: 0 5%;
 }
 .container , .container-contacts{
-    margin: 0 280px;
+    margin: 0 250px;
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255);   
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+
+    border-radius: 20px 20px;
+    z-index: -1;
 }
 .main-container{
     margin-left: auto;
@@ -255,6 +262,7 @@ body{
     left:80%;
     transition: 0.2s;
     box-shadow:  0px 20px 20px rgb(33 72 70);
+    z-index: 20;
 }
 .main-btn{
     font-size: 25px;
@@ -314,8 +322,8 @@ span{
 
 .timeline {
     position: relative;
-    z-index: -1;
     margin: 0;
+    top: 30px;
     padding: 30px 0 30px 50px;
     list-style: none;
   }
@@ -358,7 +366,8 @@ a.anchor{
 }
 
 .projects{
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 .projects h1{
     text-align: center;
@@ -466,7 +475,7 @@ a.anchor{
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 10;    
+    z-index: 60;    
     display: none;
     opacity: 0;
     animation: fadeInFromNone 0.5s ease-in-out;
@@ -484,7 +493,7 @@ a.anchor{
     display: none;
     opacity: 0;
     position: fixed;
-    z-index: 20;
+    z-index: 100;
     margin: auto auto;
     width: 80vw;
     height: 90vh;
@@ -559,7 +568,10 @@ a.anchor{
 .close:hover {
     background-color: rgba(252, 20, 0, 0.8);
 }
-
+.gallery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .gallery-holder{
     display: flex;
     flex-direction: column;
@@ -668,7 +680,7 @@ h1{
     max-width: 90vw;
     border-radius: 1%;
     transform: translate(-50%, -50%);
-    z-index: 20;
+    z-index: 100;
     animation: fadeInFromNone 0.5s ease-in-out;
     box-shadow: 0 0 10px 1px rgb(0, 0, 0);
 }
@@ -687,7 +699,7 @@ h1{
 }
 .contacts{
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .contacts-text{
@@ -706,7 +718,8 @@ h1{
     align-items: center;
     flex-direction: row;
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
-    border-radius: 1%;
+    border-radius: 20px 20px;
+    margin-bottom: 50px;
 }
 .contact-left{
     width: 100%;
@@ -882,6 +895,7 @@ h1{
 
 
 @media(max-width: 1131px){
+    
     .main-btn{
         font-size: 20px;
     }
@@ -945,6 +959,17 @@ h1{
 }
 
 @media(max-width: 842px){
+    body{
+        background-color: #fff;
+    }
+    .container , .container-contacts{
+        box-shadow: none;
+        padding: 0 10px;
+    }
+    .container-contacts{
+        margin:0;
+        padding:0;
+    }
     .burger {
         position: relative;
         width: 40px;
