@@ -252,23 +252,35 @@ body{
     position: absolute;
     background: linear-gradient(45deg, var(--first) 10%,var(--second) 80%);  
     width: max-content;
-    padding: 0 20px;
-    height: 70px;
+    padding: 0 10px;
+    height: 60px;
     border-radius: 40px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 80%;
-    left:80%;
+    top: 85%;
+    left:50%;
+    transform: translate(-50%, -50%);
     transition: 0.2s;
     box-shadow:  0px 20px 20px rgb(33 72 70);
     z-index: 20;
 }
 .main-btn{
-    font-size: 25px;
+    position: relative;
+    font-size: 22px;
     font-weight: 500;
     color: #fff;
     text-align: center;
+}
+.main-btn::after{
+    position: absolute;
+    content: '›';	
+    font-size: 45px;
+    transform: rotate(90deg);
+    top: 30px;
+    right: 45%;
+    opacity: 0.7;
+
 }
 .main-btn-holder:hover{
     filter: brightness(0.86);
@@ -463,6 +475,7 @@ a.anchor{
 }
 
 
+
 .project-img-holder{
     display: flex;
     flex-direction: row;
@@ -615,11 +628,11 @@ h1{
   opacity: 0;
 }
 .read-more-checker ~ .read-more-button::before {
-    content: "Развернуть »";
+    content: "Развернуть ▼";
     
 }
 .read-more-checker:checked ~ .read-more-button:before {
-  content: "Свернуть «";
+  content: "Свернуть ▲";
   
 }
 .read-more-button:hover{
@@ -846,10 +859,6 @@ h1{
     display: block;
 }
 @media(max-width: 1640px){
-    .main-btn-holder{
-        top: 80%;
-        left:8%
-    }
     .main-holder{
         align-items: stretch;
     }
@@ -1018,11 +1027,7 @@ h1{
         display: none;
         
     }
-    .main-btn-holder{
-        position: unset;
-        order: 3
 
-    }
     .main-container{
         margin-bottom: 0;
         padding-bottom: 100px;
@@ -1114,7 +1119,7 @@ h1{
         text-align: left;
     }
     .projects{
-        margin-bottom: 0;
+        margin:0;
     }
     .project-header-img{
         min-height: 100%;
@@ -1179,6 +1184,9 @@ h1{
     }
     .close:after{
         content: 'Назад';
+    }
+    .gallery{
+        margin:0;
     }
     .img-block{
         width: 142px;
