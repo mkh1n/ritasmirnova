@@ -289,6 +289,24 @@ button:hover{
     background: linear-gradient(90deg, var(--first) 30%,var(--second) 70%);  
 
 }
+.kino-btn{
+    padding:8px;
+    margin: 12px;
+    width: fit-content;
+    text-align: center;
+    background:linear-gradient(45deg, var(--first) 10%,var(--second) 80%);
+    border-radius: 20px 20px;
+    color:white; 
+    transition: 0.3s;
+    cursor: pointer;
+
+    
+}
+.kino-btn:hover{
+    filter: brightness(0.86);
+    background: linear-gradient(90deg, var(--first) 30%,var(--second) 70%);  
+
+}
 .info-about{
     display: flex;
     flex-direction: column;
@@ -490,7 +508,8 @@ a.anchor{
 }
 .project-text a{
     text-decoration: underline;
-    color: var(--fifth)
+    color: var(--fifth);
+    font-weight: bold;
 }
 .project-text a:hover{
     color: rgb(36, 52, 53)
