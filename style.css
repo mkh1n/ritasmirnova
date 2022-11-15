@@ -284,7 +284,7 @@ button:hover{
 
 }
 .kino-btn{
-    font-weight: bold;
+    font-weight: 500;
     padding:10px;
     margin: 12px;
     width: fit-content;
@@ -720,7 +720,7 @@ h1{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   transition: 0.3s;
 }
 .limiter .bottom {
@@ -952,10 +952,6 @@ h1{
 .burger{
     display: none;
     transition: 0.3s;
-}
-.burger:hover{
-    background-color: rgb(0, 0, 0, 0.1);
-    border-radius: 20%;
 }
 .burger span, .burger:after, .burger:before{
     height: 4px;
@@ -1193,6 +1189,16 @@ h1{
         top:-10%;
         left:5%;
     }
+    .main-btn{
+        font-size: 18px;
+    }
+    .main-btn-holder{
+        height: 50px;
+        top:90%;
+    }
+    .main-btn::after{
+        top: 16px;
+    }
     .social-media{
         display: none;
         
@@ -1337,12 +1343,12 @@ h1{
         margin:0;
     }
     .img-block{
-        width: 142px;
-        height: 90px;
+        width: 30vw;
+        height: 19vw;
     }
     .award-block{
-        width: 142px;
-        height: 185px;
+        width: 30vw;
+        height: 40vw;
     }
     .limiter{
         max-height: 300px;
@@ -1398,13 +1404,5 @@ h1{
     }
     .main-btn-holder{
         height: 45px;
-    }
-    .img-block{
-        width: 120px;
-        height: 70px;
-    }
-    .award-block{
-        width: 120px;
-        height: 150px;
     }
 }
