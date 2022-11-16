@@ -1303,6 +1303,10 @@ h1{
         height: 180px;
         margin: 5px 0;
     }
+    details[open] summary ~ *{ 
+        font-size: 15px;
+    
+    }
     iframe{
         width: 90%;
     }
