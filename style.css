@@ -283,20 +283,6 @@ button:hover{
     background: linear-gradient(90deg, var(--first) 30%,var(--second) 70%);  
 
 }
-.kino-btn{
-    font-weight: 500;
-    padding:10px;
-    margin: 12px;
-    width: fit-content;
-    text-align: center;
-    background:linear-gradient(45deg, var(--first) 10%,var(--second) 80%);
-    border-radius: 25px 25px;
-    color:white; 
-    transition: 0.3s;
-    cursor: pointer;
-
-    
-}
 .kino-btn:hover{
     filter: brightness(0.86);
     background: linear-gradient(90deg, var(--first) 30%,var(--second) 70%);  
@@ -326,6 +312,12 @@ button:hover{
     background-color: #fff;
 }
 .about-scroll::before{
+    display: block;
+	content: "";
+	height: 250px;
+	margin: -250px 0 0;
+}
+.project-scroll::before{
     display: block;
 	content: "";
 	height: 200px;
@@ -441,12 +433,6 @@ summary::-moz-list-bullet{list-style-type:none;}
 summary::marker{
     display:none;
     opacity: 0;} 
-span{
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 1;
-}
-
 a.anchor{
     display: block;
     position: relative;
@@ -697,6 +683,97 @@ a.anchor{
 .close:hover {
     background-color: rgba(197, 197, 197, 0.8);
 }
+.otro-blockquote{
+    font-size: 25px;
+    width:60%;
+    height: max-content;
+    font-family:Open Sans;
+    font-style:italic;
+    color: #313131;
+    padding:1.2em 30px 1.2em 75px;
+    border-left:8px solid var(--first) ;
+    line-height:1.6;
+    position: relative;
+    background:#EDEDED;
+    z-index: 40;
+    text-align: left;
+  }
+  
+  .otro-blockquote::before{
+    font-family:Arial;
+    content: "\201C";
+    color:var(--first);
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+  }
+  
+  .otro-blockquote::after{
+    content: '';
+  }
+  
+  .otro-blockquote span{
+    display:block;
+    color:#333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:10px;
+    text-align: left;
+  }
+  .kino-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.kino-holder{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kino-img-holder{
+    position: relative;
+    width: 50%; 
+    height: 33vw;
+}
+img[class^="kino-img"]{
+    position: relative;
+    box-shadow: 0 0 10px 5px rgb(37, 37, 37, 0.2);
+}
+.kino-img-1{
+    width: 10vw;
+    height: auto;
+    top:21vw;
+    left:2vw;
+    z-index: 30;
+}
+.kino-img-2{
+    width: 10vw;
+    height: auto;
+    top:15vw;
+    left:0vw;
+    z-index: 20;
+}
+.kino-img-3{
+    width: 17vw;
+    height: auto; 
+    top:-17vw;
+    z-index: 10;
+}
+.kino-btn{
+    bottom:10%;
+    font-weight: 500;
+    padding:15px;
+    margin-bottom: 12px;
+    width: fit-content;
+    text-align: center;
+    background:linear-gradient(45deg, var(--first) 10%,var(--second) 80%);
+    border-radius: 30px 30px;
+    color:white; 
+    transition: 0.3s;
+    cursor: pointer; 
+}
 .gallery{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -841,6 +918,7 @@ h1{
 	height: 120px;
 	margin: -120px 0 0;
 }
+
 .contacts{
     text-align: center;
     margin-bottom: 50px;
@@ -934,14 +1012,14 @@ h1{
 
 
 .footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 30px;
+    text-align: center;
     background-color: #444;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+}
+.footer a{
+    color: var(--first)
 }
 .social-media-footer{
     display: none;
@@ -1082,6 +1160,9 @@ h1{
         font-size: 20px;
     }
     .nav-item , .nav-item-mob{
+        font-size: 20px;
+    }
+    .otro-blockquote {
         font-size: 20px;
     }
     .img-block{
@@ -1347,6 +1428,23 @@ h1{
     .close::after{
         font-size: 40px;
     }
+    .kino-holder{
+        flex-direction: column;
+    }
+    .otro-blockquote{
+        padding:10px 40px 10px 80px;
+        font-size: 15px;
+        margin: 20px auto;
+      }
+      .kino-btn{
+        padding: 10px;
+      }
+      .kino-img-holder{
+        display: none;
+      }
+      .kino-btn{
+        position: unset;
+      }
     .gallery{
         margin:0;
     }
@@ -1370,6 +1468,10 @@ h1{
     .contacts-scroll::before{
         height: 100px;
         margin: -100px 0 0;
+    }
+    .gallery-scroll::before{
+        height: 200px;
+        margin: -200px 0 0;
     }
     .read-more-checker:checked ~ .read-more-button {
         margin-top: 10px;
