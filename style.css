@@ -1300,7 +1300,7 @@ h1{
     }
     .container , .container-contacts{
         box-shadow: none;
-        padding: 0 15px;
+        padding: 0 10px;
         margin: 0 15px;
     }
     .container-contacts{
@@ -1505,13 +1505,13 @@ h1{
         margin:0;
         margin-top:0;
         margin-left:0;
-        width: calc(100vw - 37px);
+        width: calc(100vw - 20px);
         height: 84vh;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        padding: 20px;
+        padding: 10px;
         overflow-x: hidden;
         border-radius: 0;
         border-bottom-left-radius: 30px 30px;
@@ -1530,7 +1530,7 @@ h1{
     }
     .close{
         position: fixed;
-        top: 83vh;
+        top: 80vh;
         left: 45vw;
         height: 35px;
         width: 35px;
