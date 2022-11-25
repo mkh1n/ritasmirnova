@@ -76,12 +76,33 @@ body{
 button:hover{
     color: var(--first)
 }
-.en{
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+.element-animation{
+    opacity: 0;
+}
+.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
 }
 
+.element-animation.scroll-right{
+    opacity: 0;
+    transform: translateX(10%);
+}
+.scroll-right.element-show{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.element-animation.scroll-left{
+    opacity: 0;
+    transform: translateX(-10%);
+}
+.scroll-left.element-show{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}
 
 
 
@@ -280,6 +301,7 @@ button:hover{
     align-items: center;
     top: 85%;
     left:50%;
+    width: min-content;
     transform: translate(-50%, -50%);
     transition: 0.2s;
     z-index: 20;
@@ -291,6 +313,9 @@ button:hover{
     color: rgb(150, 150, 150);
     text-align: center;
     transform: rotate(90deg);
+    width: min-content;
+    left: 10px
+
 }
 
 .main-btn-holder:hover{
@@ -674,8 +699,6 @@ a.anchor{
     background-color: rgba(0, 0, 0, 0.65);
     position: fixed;
     backdrop-filter: blur(8px);
-
-
     }
     
 .overlay:target {
@@ -1088,14 +1111,19 @@ h1{
     font-size: 3em;
 }
 
-
+.footer-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .footer{
     text-align: center;
-    background-color: #444;
-    color: white;
+    color: rgb(95, 95, 95);
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    padding: 10px;
+    padding: 30px;
+    width: 70%;
+    border-top: solid 2px rgb(206, 206, 206);
 }
 .footer a{
     color: var(--first)
