@@ -24,6 +24,35 @@
 a{
     text-decoration: none;
 }
+
+.element-animation{
+    opacity: 0;
+}
+.element-animation.element-show{
+    opacity: 1;
+    transition: all 1s;
+}
+
+.element-animation.scroll-right{
+    opacity: 0;
+    transform: translateX(10%);
+}
+.scroll-right.element-show{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.element-animation.scroll-left{
+    opacity: 0;
+    transform: translateX(-10%);
+}
+.scroll-left.element-show{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
 body{
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -328,6 +357,7 @@ button:hover{
 .info-text{
     font-weight: 400;
     padding-left: 50px;
+    font-size: 18px;
 }
 .info-text p{
     font-size: 35px;
@@ -539,7 +569,7 @@ a.anchor{
 
 .project-text{
     color: #333;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 400;
     width: 100%;
     text-align: left;
@@ -566,12 +596,12 @@ a.anchor{
     font-weight: 600;
 }
 .project-text a{
-    text-decoration: underline;
-    color: var(--fifth);
+    color: var(--first);
     font-weight: bold;
 }
 .project-text a:hover{
-    color: rgb(36, 52, 53)
+    color: rgb(230, 65, 0);
+    text-decoration: underline;
 }
 
 .row{
@@ -848,7 +878,7 @@ img[class^="kino-img"]{
     margin-bottom: 12px;
     width: fit-content;
     text-align: center;
-    background:linear-gradient(45deg, var(--first) 10%,var(--second) 80%);
+    background:linear-gradient(180deg, var(--first) 10%,var(--second) 80%);
     border-radius: 30px 30px;
     color:white; 
     transition: 0.3s;
@@ -924,7 +954,7 @@ h1{
     font-weight: 500;
     margin-top: 50px;
     margin-bottom: 100px;
-    background: linear-gradient(45deg, var(--first) 10%,var(--second) 80%);  
+    background: linear-gradient(-180deg, var(--first) 10%,var(--second) 80%);  
     width: max-content;
     padding:15px;
     border-radius: 40px 40px;
@@ -1088,17 +1118,26 @@ h1{
     font-size: 3em;
 }
 
-
+.footer-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .footer{
+    width: 80%;
+    border-top: 2px solid rgb(216, 216, 216);
     text-align: center;
-    background-color: #444;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 18px;
+    padding:16px;
 }
 .footer a{
     color: var(--first)
+}
+.footer a:hover{
+    text-decoration: underline var(--first);
 }
 .social-media-footer{
     display: none;
